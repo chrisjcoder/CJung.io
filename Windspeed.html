@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Windspeed</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script id="nav">
+    $.get("navbar2.html", function (data) {
+      $("#nav").replaceWith(data);
+    });
+  </script>
+        
+ <!-- Building 2 cards on 1 row -->
+
+ <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title">Windspeed</h1>
+            <hr>
+            <img src="Resources/assets/images/Fig4.png" alt="Main Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card2">
+          <div class="card-body">
+            <h2 class="card-title">Visualizations</h2>
+            <hr>
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="thumbnail">
+                          <a href="MaxTemperature.html">
+                        <img src="Resources/assets/images/Fig1.png" alt="Max Temperature" class="img"></a>
+                      </div>               
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <a href="humidity.html">
+                          <img src="Resources/assets/images/Fig2.png" alt="Humidity" class="img"></a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <a href="Cloudiness.html">
+                          <img  src="Resources/assets/images/Fig3.png" alt="Cloudiness" class="img"></a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <a href="Windspeed.html">
+                          <img src="Resources/assets/images/Fig4.png" alt="WindSpeed" class="img"></a>
+                        </div>
+                    </div>
+                    <br>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+               
+  
+  </body>
+
+  <footer>
+      <div class="footer">&commat; Copyright Coding Bootcamp 2019</div>
+      </footer>
+  
+  </html>
